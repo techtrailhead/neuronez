@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { NeuralField } from "@/components/NeuralField";
-
-const plexSans = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-plex-sans",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://neuronez.lab"),
@@ -38,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-[var(--page-bg)]">
       <body
-        className={`${plexSans.variable} antialiased bg-[var(--page-bg)] text-[var(--text-primary)]`}
+        className="antialiased bg-[var(--page-bg)] text-[var(--text-primary)]"
       >
         <NeuralField />
         <div className="relative z-10 flex min-h-screen flex-col">
