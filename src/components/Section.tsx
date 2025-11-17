@@ -32,7 +32,7 @@ export function Section({
           className={cn(
             "w-full",
             isCenter && "mx-auto max-w-3xl text-center",
-            !isCenter && "text-left",
+            !isCenter && "text-left md:max-w-[90%]",
           )}
         >
           {kicker && (
