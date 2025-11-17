@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navigation = [
-  { href: "/about", label: "Team" },
+  { href: "/team", label: "Team" },
   { href: "/services", label: "Build with Us" },
   { href: "/contact", label: "Contact" },
 ];
@@ -13,13 +13,12 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="relative z-20 bg-transparent">
-      <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-6">
-        <Link href="/" className="font-semibold tracking-tight text-white">
-          neuronez
-          <span className="ml-1 text-xs uppercase text-slate-400">lab</span>
+    <header className="fixed inset-x-0 top-0 z-30 border-b border-white/5 bg-[#0b0b0b]/80 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center gap-6 px-6 py-4 text-sm text-[var(--text-muted)]">
+        <Link href="/" className="font-semibold tracking-tight text-[var(--text-primary)]">
+          neuronezLAB
         </Link>
-        <nav className="hidden items-center gap-6 text-sm text-slate-400 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           {navigation.map((item) => {
             const isActive =
               item.href === "/"
@@ -38,11 +37,11 @@ export function Navbar() {
             );
           })}
         </nav>
-        <div className="ml-auto hidden text-sm text-[var(--accent-secondary)] md:block">
+        <div className="ml-auto hidden text-xs uppercase tracking-[0.4em] text-[var(--accent-secondary)] md:block">
           Private AI Lab
         </div>
       </div>
-      <div className="flex gap-3 overflow-x-auto border-t border-white/10 px-6 py-3 text-xs text-slate-400 md:hidden">
+      <div className="flex gap-3 overflow-x-auto border-t border-white/10 px-6 py-3 text-xs text-[var(--text-muted)] md:hidden">
         {navigation.map((item) => {
           const isActive =
             item.href === "/"

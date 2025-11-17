@@ -36,12 +36,6 @@ export default function RootLayout({
         <div className="relative z-10 flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">{children}</main>
-          <footer className="border-t border-white/10 bg-[var(--surface-muted)]/80">
-            <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-slate-300 md:flex-row md:items-center md:justify-between">
-              <p className="font-medium text-white">neuronez lab</p>
-              <p>Engineering measurable AI systems with scientific rigor.</p>
-            </div>
-          </footer>
         </div>
       </body>
     </html>

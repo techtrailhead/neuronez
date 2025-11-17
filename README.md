@@ -1,41 +1,34 @@
-# neuronez — Private AI Lab
+# neuronez LAB
 
-First prototype of the neuronez marketing site. Built with a scientific, minimal aesthetic to highlight the lab's selective, research-driven AI practice.
+Story-driven site for the neuronez private AI lab. Two-person studio (Tanay & Ankita) sharing philosophy, process, and selected work as a calm scroll experience.
 
 ## Stack
-- [Next.js 14 App Router](https://nextjs.org/docs) with TypeScript
-- Tailwind CSS v4 for styling + IBM Plex Sans via `next/font`
-- Framer Motion for subtle fade-in interactions
-- Reusable UI primitives: `Navbar`, `Hero`, `Section`, `Card`, and `FadeIn`
+- Next.js 14 (App Router)
+- TypeScript + Tailwind CSS v4
+- IBM Plex Mono via `@fontsource`
+- Framer Motion for scroll-fade sections
+- Simple reusable primitives (`Navbar`, `Section`, `FadeIn`, etc.)
 
-## Getting started
+## Develop locally
 ```bash
 npm install
 npm run dev
 ```
-Visit `http://localhost:3000` to inspect the site. All content lives under `src/` and hot reloads as you edit.
+Visit `http://localhost:3000` to explore the storytelling flow. `npm run build` mirrors the Vercel production build.
 
-## Folder structure
+## Structure
 ```
 src/
 ├─ app/
-│  ├─ page.tsx            # Home
-│  ├─ services/page.tsx   # Services overview
-│  ├─ about/page.tsx      # Philosophy + team
-│  ├─ insights/page.tsx   # Lab Notes placeholder
-│  └─ contact/page.tsx    # Contact + form
-├─ components/            # Navbar, Hero, Section, Card, FadeIn
-├─ lib/
-│  ├─ data.ts             # Content + placeholder data
-│  └─ utils.ts            # Helper utilities
-└─ app/globals.css        # Tailwind + global styles
+│  ├─ page.tsx          # Scroll narrative
+│  ├─ about/…           # Static pages (about, services, insights, contact)
+│  └─ globals.css       # Theme + typography
+├─ components/          # Navbar, Section, HeroSection, Craft, Process, Work, Stories, etc.
+├─ lib/                 # Utility helpers + placeholder data
+└─ app/icon.svg         # Custom lab flask favicon
 ```
 
-## Adding new pages or posts
-1. **Create a new route** under `src/app/<route>/page.tsx`. Import `Section`, `Card`, and `FadeIn` for consistent layout.
-2. **Add copy or placeholder data** inside `src/lib/data.ts` so future CMS or Markdown sources can plug in easily.
-3. For Lab Notes posts, add entries to `insightPosts` (title, description, tag). Later you can swap this array with CMS-backed fetch logic.
-
 ## Notes
-- `npm run lint` keeps the codebase consistent with Next.js ESLint defaults.
-- Animations are intentionally light; adjust timing or motion variants in `FadeIn.tsx` as needed.
+- All typography uses IBM Plex Mono to match the reference aesthetic.
+- Each section is a full-viewport panel using Framer Motion fade/translate transitions.
+- Adjust colors/animation timings inside `globals.css`, `Section.tsx`, or `FadeIn.tsx`.

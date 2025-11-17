@@ -1,10 +1,13 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 type SectionProps = {
   id?: string;
   kicker?: string;
-  title: string;
+  title?: string;
   description?: string;
   align?: "left" | "center";
   className?: string;
@@ -23,11 +26,18 @@ export function Section({
   const isCenter = align === "center";
 
   return (
-    <section
+    <motion.section
       id={id}
-      className={cn("relative border-b border-white/10 py-16 md:py-20", className)}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.6 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className={cn(
+        "relative flex min-h-screen items-center border-b border-white/10",
+        className,
+      )}
     >
-      <div className="mx-auto w-full max-w-6xl px-6">
+      <div className="mx-auto w-full max-w-6xl px-6 py-16">
         <div
           className={cn(
             "w-full",
@@ -36,19 +46,21 @@ export function Section({
           )}
         >
           {kicker && (
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent-secondary)]/80">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent-secondary)]">
               {kicker}
             </p>
           )}
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
-            {title}
-          </h2>
+          {title && (
+            <h2 className="mt-5 text-3xl font-semibold text-[var(--text-primary)] md:text-4xl">
+              {title}
+            </h2>
+          )}
           {description && (
-            <p className="mt-4 text-base text-slate-300">{description}</p>
+            <p className="mt-4 text-base text-[var(--text-muted)]">{description}</p>
           )}
         </div>
-        <div className="mt-10">{children}</div>
+        <div className="mt-10 text-[var(--text-muted)]">{children}</div>
       </div>
-    </section>
+    </motion.section>
   );
 }

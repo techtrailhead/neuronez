@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section className="border-b border-white/10">
-      <div className="mx-auto max-w-6xl px-6 py-20">
+    <section className="flex min-h-screen items-center border-b border-white/10">
+      <div className="mx-auto max-w-6xl px-6">
         <motion.div
-          className="space-y-4 text-[var(--text-muted)]"
+          className="space-y-5 text-[var(--text-muted)]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -17,14 +17,14 @@ export function HeroSection() {
             neuronez lab
           </p>
           <h1 className="max-w-4xl text-4xl font-semibold text-[var(--text-primary)] md:text-5xl">
-            A private lab mindset for applied AI.
+            We’ve been thinking about what work feels like after AI became second nature.
           </h1>
           <div className="space-y-4 text-lg leading-relaxed">
             <p>
-              We’ve been thinking about what real work looks like in the age of AI. For us, it’s less about chasing trends and more about choosing the problems that actually matter. We’re builders and researchers at heart, experimenting with models, workflows, and systems that quietly make things better.
+              It’s not about grinding anymore. It’s about choosing the problems that matter. We’re builders and researchers at heart; experimenting with models, workflows, and systems that quietly make things better.
             </p>
             <p>
-              We started neuronez to create space for deep, intentional work. Not rushed projects or loud demos — but the kind of builds that stay with you.
+              neuronez is our space to slow down, think deeply, and build things that last.
             </p>
           </div>
         </motion.div>
