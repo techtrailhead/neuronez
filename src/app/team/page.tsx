@@ -13,6 +13,7 @@ const profiles = [
   {
     name: "Tanay",
     title: "Engineering & Systems",
+    bio: "Ex-Microsoft, Founder-neoG.camp, CEO @Invact.",
     description: [
       "Codes like caffeine, thinks like a product manager.",
       "Loves building tools that make work vanish.",
@@ -27,6 +28,7 @@ const profiles = [
   {
     name: "Ankita",
     title: "Product & Strategy",
+    bio: "Ex-Google, Product & Marketing Head @Invact.",
     description: [
       "Writes products before they’re built.",
       "Turns chaotic ideas into quiet systems.",
@@ -54,12 +56,13 @@ export default function TeamPage() {
           {profiles.map((profile) => (
             <ProfileCard
               key={profile.name}
-              name={profile.name}
-              title={profile.title}
-              description={profile.description}
-              links={profile.links}
-              imageSrc={profile.imageSrc}
-            />
+          name={profile.name}
+          title={profile.title}
+          bio={profile.bio}
+          description={profile.description}
+          links={profile.links}
+          imageSrc={profile.imageSrc}
+        />
           ))}
         </div>
         <HoverCard />

@@ -11,12 +11,13 @@ type LinkItem = {
 type ProfileCardProps = {
   name: string;
   title: string;
+  bio?: string;
   description: string[];
   links: LinkItem[];
   imageSrc?: string;
 };
 
-export function ProfileCard({ name, title, description, links, imageSrc }: ProfileCardProps) {
+export function ProfileCard({ name, title, bio, description, links, imageSrc }: ProfileCardProps) {
   return (
     <motion.div
       whileHover={{ scale: 1.05, boxShadow: "0 0 50px rgba(108, 250, 199, 0.2)" }}
@@ -38,7 +39,12 @@ export function ProfileCard({ name, title, description, links, imageSrc }: Profi
         {title}
       </p>
       <h3 className="mt-2 text-2xl font-semibold text-[var(--text-primary)]">{name}</h3>
-      <div className="mt-4 space-y-2 text-sm leading-relaxed">
+      {bio && (
+        <span className="mt-3 inline-block rounded-full border border-[var(--accent-primary)]/50 bg-[var(--accent-primary)]/12 px-3 py-1 text-[12px] font-semibold uppercase tracking-[0.18em] text-[var(--accent-primary)]">
+          {bio}
+        </span>
+      )}
+      <div className={`space-y-2 text-sm leading-relaxed ${bio ? "mt-3" : "mt-4"}`}>
         {description.map((line) => (
           <p key={line}>{line}</p>
         ))}
