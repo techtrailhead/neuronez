@@ -9,8 +9,8 @@ export function Closing() {
           If we reach out to you, it’s because we believe your work deserves precision, not noise. If you reach out to us, we’ll start with a conversation and no forms, no funnels.
         </p>
         <div className="flex flex-col items-center gap-4">
-          <a href="mailto:hello@neuronez.ai" className="text-[var(--accent-primary)]">
-            founder@neuronez.com
+          <a href="mailto:contact@ankita.cc" className="text-[var(--accent-primary)]">
+            contact@ankita.cc
           </a>
           <a
             href="/contact"
