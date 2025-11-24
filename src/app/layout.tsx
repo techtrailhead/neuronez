@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 import { Navbar } from "@/components/Navbar";
 import { NeuralField } from "@/components/NeuralField";
 
@@ -32,6 +33,18 @@ export default function RootLayout({
       <body
         className="antialiased bg-[var(--page-bg)] text-[var(--text-primary)]"
       >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LY4WLTGNTV"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LY4WLTGNTV');
+          `}
+        </Script>
         <NeuralField />
         <div className="relative z-10 flex min-h-screen flex-col">
           <Navbar />
