@@ -1,23 +1,25 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
-const container = {
+const easeCurve: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
+
+const container: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
+      ease: easeCurve,
       staggerChildren: 0.15,
     },
   },
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 14 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeCurve } },
 };
 
 export function HeroSection() {
