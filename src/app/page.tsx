@@ -1,12 +1,11 @@
 import { HeroSection } from "@/components/HeroSection";
 import { About } from "@/components/About";
-import { Craft } from "@/components/Craft";
 import { Process } from "@/components/Process";
-import { Work } from "@/components/Work";
-import { SampleApps } from "@/components/SampleApps";
-import { ResearchPapers } from "@/components/ResearchPapers";
 import { Philosophy } from "@/components/Philosophy";
+import { Work } from "@/components/Work";
+import { ResearchPapers } from "@/components/ResearchPapers";
 import { Stories } from "@/components/Stories";
+import { Industries } from "@/components/Industries";
 import { Closing } from "@/components/Closing";
 import { Footer } from "@/components/Footer";
 
@@ -15,13 +14,12 @@ export default function Home() {
     <main className="pt-12">
       <HeroSection />
       <About />
-      <Craft />
       <Process />
-      <Work />
-      <SampleApps />
-      <ResearchPapers />
       <Philosophy />
+      <Work />
+      <ResearchPapers />
       <Stories />
+      <Industries />
       <Closing />
       <Footer />
     </main>

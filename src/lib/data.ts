@@ -61,39 +61,39 @@ export const whyNeuronez = [
 
 export const services = [
   {
-    title: "Discovery & Opportunity Assessment",
-    description: "System review, data readiness check, and prioritized opportunities.",
-    outcome: "Shortlist of measurable bets and the proof we need.",
+    title: "Discovery & Problem Assessment",
+    description: "We study your systems, data, and workflows to understand what’s worth solving with AI.",
+    outcome: "Clear opportunities with evidence behind them.",
     timeline: "2-3 weeks",
   },
   {
-    title: "Prototype & Pilot Programs",
-    description: "Targeted experiments with instrumentation and feedback loops.",
-    outcome: "Pilot with clear signals and a go/no-go call.",
-    timeline: "4-6 weeks",
+    title: "Prototype & Pilot Builds",
+    description: "We design small, focused experiments to see what works and what doesn’t.",
+    outcome: "A working pilot and a confident go/no-go decision.",
+    timeline: "1-2 weeks",
   },
   {
-    title: "Custom Model Development",
-    description: "Fine-tuning, retrieval augmentation, or proprietary architectures.",
-    outcome: "Versioned models plus evaluation harnesses.",
+    title: "Custom Model & System Development",
+    description: "Fine-tuning, building retrieval systems with vector or graph databases, adding long-term memory, or designing continual-learning loops",
+    outcome: "A reliable model with evaluation checks built in.",
     timeline: "6-10 weeks",
   },
   {
     title: "Integration & Deployment",
-    description: "Secure endpoints, infrastructure automation, and staged rollouts.",
-    outcome: "Monitored production release with runbooks.",
+    description: "We integrate the model into your product with secure APIs, orchestration, monitoring, and load-tested workflows.",
+    outcome: "A reliable deployment with observability and runbooks.",
     timeline: "3-5 weeks",
   },
   {
-    title: "Data Pipeline Engineering",
-    description: "Data collection, labeling, and observability layers for AI systems.",
-    outcome: "Reliable, governed data stack.",
+    title: "Data & Pipeline Engineering",
+    description: "We design pipelines for collection, labeling, feature extraction, embeddings, and evaluation.",
+    outcome: "Clean data + solid observability → systems",
     timeline: "4-8 weeks",
   },
   {
     title: "AI Strategy & Roadmap",
-    description: "Executive advisory translating research into near-term plans.",
-    outcome: "Multi-quarter roadmap and capability model.",
+    description: "Understand where LLMs fit, how to scale them, when to use fine-tuning vs RAG, how to measure drift, and how to build internal capability.",
+    outcome: "Multi-quarter AI roadmap with clear priorities",
     timeline: "2-4 weeks",
   },
 ];
@@ -135,7 +135,7 @@ export const insightPosts = [
 ];
 
 export const contactSocials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/neuronez" },
-  { label: "GitHub", href: "https://github.com/neuronez" },
-  { label: "Email", href: "mailto:lab@neuronez.com" },
+  { label: "Twitter", href: "https://x.com/neuronezhq" },
+  { label: "Medium", href: "https://medium.com/@neuronez" },
+  { label: "Email", href: "mailto:contact@ankita.cc" },
 ];

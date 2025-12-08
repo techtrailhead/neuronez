@@ -1,4 +1,4 @@
-# neuronez LAB
+# neuronez
 
 Story-driven site for the neuronez private AI lab. Two-person studio (Tanay & Ankita) sharing philosophy, process, and selected work as a calm scroll experience.
 

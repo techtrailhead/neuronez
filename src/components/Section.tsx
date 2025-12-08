@@ -11,6 +11,9 @@ type SectionProps = {
   description?: string;
   align?: "left" | "center";
   className?: string;
+  background?: ReactNode;
+  fullHeight?: boolean;
+  showBorder?: boolean;
   children: ReactNode;
 };
 
@@ -21,6 +24,9 @@ export function Section({
   description,
   align = "left",
   className,
+  background,
+  fullHeight = true,
+  showBorder = true,
   children,
 }: SectionProps) {
   const isCenter = align === "center";
@@ -33,11 +39,18 @@ export function Section({
       viewport={{ once: true, amount: 0.6 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={cn(
-        "relative flex min-h-screen items-center border-b border-white/10",
+        "relative flex items-center",
+        showBorder && "border-b border-white/10",
+        fullHeight && "min-h-screen",
         className,
       )}
     >
-      <div className="mx-auto w-full max-w-6xl px-6 py-16">
+      {background && (
+        <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-70">
+          {background}
+        </div>
+      )}
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-16">
         <div
           className={cn(
             "w-full",
