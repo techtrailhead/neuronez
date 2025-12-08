@@ -14,15 +14,15 @@ export function About() {
   return (
     <Section
       kicker="Who we are"
-      title="The team you don't usually meet"
+      title="The team you don&apos;t usually meet"
       description="A small crew of builders with a decade-plus inside Microsoft, Google, Amazon, Meta, and Flipkart."
     >
       <FadeIn className="space-y-4 text-lg text-[var(--text-muted)]">
         <p>
-          They're engineers with over a decade of work inside Microsoft, Google, Amazon, Meta, and Flipkart.
+          They&apos;re engineers with over a decade of work inside Microsoft, Google, Amazon, Meta, and Flipkart.
         </p>
         <p>
-          People who've shipped complex systems long before AI became fashionable.
+          People who&apos;ve shipped complex systems long before AI became fashionable.
         </p>
         <p>
           They came together because building with AI demands experience, patience, and the instinct to solve real problems, not performative ones.
