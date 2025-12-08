@@ -222,7 +222,7 @@ export function ContactForm() {
             disabled={isSubmitting}
             className="w-full rounded-full bg-[var(--accent-primary)] px-6 py-3 text-base font-semibold text-[#1b1a16] transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
           >
-            {isSubmitting ? "Sending..." : "Send lab request"}
+            {isSubmitting ? "Sending..." : "Send Request"}
           </button>
         </form>
       )}

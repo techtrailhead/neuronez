@@ -16,7 +16,7 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-30 border-b border-white/5 bg-[#0b0b0b]/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center gap-6 px-6 py-4 text-sm text-[var(--text-muted)]">
         <Link href="/" className="font-semibold tracking-tight text-[var(--text-primary)]">
-          neuronezLAB
+          neuronez
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navigation.map((item) => {
@@ -38,7 +38,9 @@ export function Navbar() {
           })}
         </nav>
         <div className="ml-auto hidden text-xs uppercase tracking-[0.4em] text-[var(--accent-secondary)] md:block">
-          Private AI Lab
+          <span className="rounded-full border border-[var(--accent-secondary)]/40 bg-[var(--surface-muted)]/60 px-3 py-1 text-[var(--accent-secondary)] shadow-[0_0_18px_rgba(255,255,255,0.08)]">
+            AI Product Studio
+          </span>
         </div>
       </div>
       <div className="flex gap-3 overflow-x-auto border-t border-white/10 px-6 py-3 text-xs text-[var(--text-muted)] md:hidden">

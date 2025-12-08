@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <Section
         kicker="Programs"
         title="Services built for high-impact AI initiatives."
-        description="Lab-format programs with defined hypotheses, instrumentation, and timelines."
+     
         align="center"
       >
         <div className="grid gap-6 md:grid-cols-2">

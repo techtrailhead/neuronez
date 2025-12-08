@@ -3,17 +3,18 @@ import "./globals.css";
 import Script from "next/script";
 import { Navbar } from "@/components/Navbar";
 import { NeuralField } from "@/components/NeuralField";
+import { ScrollProgress } from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://neuronez.lab"),
   title: {
-    default: "neuronez — Private AI Lab",
+    default: "neuronez — AI Product Studio",
     template: "%s | neuronez",
   },
   description:
     "neuronez is a selective AI lab engineering measurable, production-grade AI systems for teams with real-world constraints.",
   openGraph: {
-    title: "neuronez — Private AI Lab",
+    title: "neuronez — AI Product Studio",
     description:
       "AI systems engineered with scientific rigor, from discovery through deployment.",
     type: "website",
@@ -47,6 +48,7 @@ export default function RootLayout({
         </Script>
         <NeuralField />
         <div className="relative z-10 flex min-h-screen flex-col">
+          <ScrollProgress />
           <Navbar />
           <main className="flex-1">{children}</main>
         </div>

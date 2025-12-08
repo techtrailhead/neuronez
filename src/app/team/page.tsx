@@ -6,7 +6,7 @@ import { ContactButton } from "@/components/contact/ContactButton";
 
 export const metadata: Metadata = {
   title: "Team",
-  description: "Meet Tanay and Ankita — the duo behind neuronez LAB.",
+  description: "Meet Tanay and Ankita — the duo behind neuronez.",
 };
 
 const profiles = [
@@ -47,10 +47,10 @@ export default function TeamPage() {
     <main className="min-h-screen bg-[var(--page-bg)] px-6 py-24">
       <div className="mx-auto flex max-w-5xl flex-col gap-12">
         <FadeIn className="text-center text-xs uppercase tracking-[0.6em] text-[var(--accent-secondary)]">
-          Let’s connect
+          Team
         </FadeIn>
         <FadeIn className="mx-auto max-w-3xl text-center text-[var(--text-muted)]">
-          We’re a private lab, so conversations start the work. Drop us a note if you’re building something that needs care and intent.
+          The AI product studio has many builders but the key members are here if you need to connect with us.
         </FadeIn>
         <div className="grid gap-6 md:grid-cols-2">
           {profiles.map((profile) => (

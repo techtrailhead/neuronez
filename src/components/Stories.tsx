@@ -3,30 +3,29 @@ import { FadeIn } from "@/components/FadeIn";
 
 const stories = [
   {
-    title: "Marketing",
-    text:
-      "We built ad pipelines that analyze creative performance automatically; hour by hour, campaign by campaign cutting costs and sparking better ideas.",
+    title: "When AI meets Marketing",
+    text: "Performance will be analysed. Our pipelines read every creative, every hour, across every campaign—highlighting what works, killing what doesn’t, and letting ideas evolve from evidence, not instinct.",
   },
   {
-    title: "Product",
-    text:
-      "We automated student progress and payment cycles for Metaversity, tripling retention while reducing manual work.",
+    title: "When AI meets Product",
+    text: "Operations will be streamlined. You can track progress, payments, and process workflows fused into one automated pipeline. The result: higher retention and your team can finally move out of manual spreadsheet maintenance.",
   },
   {
-    title: "Sales",
-    text:
-      "We tracked 100+ conversations daily using voice-integrated bots to log calls, performance, and feedback turning chaos into clarity.",
+    title: "When AI meets Sales",
+    text: "Conversations will be tracked. Voice-integrated agents capture calls, pull out insights, and map performance patterns—turning raw chatter into something you can act on.",
   },
   {
-    title: "Design",
-    text:
-      "We built our own design system to move from 10-day launches to 2-day experiments. Creativity shouldn’t wait on dependencies.",
+    title: "When AI meets Design",
+    text: "Experiments will be more creative and measured. With our internal design system, a 10-day launch cycle became a 2-day loop, letting the team test, iterate, and ship without bottlenecks.",
   },
 ];
 
 export function Stories() {
   return (
-    <Section kicker="Lab Stories" title="Narratives from the field">
+    <Section
+      kicker="AI meets Product"
+      title="What happens when AI meets the real work?"
+    >
       <div className="space-y-6">
         {stories.map((story, index) => (
           <FadeIn key={story.title} delay={index * 0.05} className="space-y-2">

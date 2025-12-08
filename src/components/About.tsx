@@ -1,23 +1,53 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Section } from "@/components/Section";
 import { FadeIn } from "@/components/FadeIn";
+
+const brandBadges = [
+  { name: "Microsoft", src: "/images/microsoft.jpeg" },
+  { name: "Google", src: "/images/google.jpeg", scale: 1.3 },
+  { name: "Amazon", src: "/images/amazon.jpeg" },
+  { name: "Meta", src: "/images/meta.jpeg", scale: 1.4 },
+];
 
 export function About() {
   return (
     <Section
       kicker="Who we are"
-      title="We are a team of 2 members."
-      description="Two builders who’ve spent over a decade across engineering, product, and marketing."
+      title="The team you don't usually meet"
+      description="A small crew of builders with a decade-plus inside Microsoft, Google, Amazon, Meta, and Flipkart."
     >
       <FadeIn className="space-y-4 text-lg text-[var(--text-muted)]">
         <p>
-          One brings in the engineering efficiency at scale. 
-          The other brings in the product and strategy momentum. 
-          Together they have led programs and partnerships at Microsoft, Google, Twilio, and Invact shaping how products reach and serve people.
+          They're engineers with over a decade of work inside Microsoft, Google, Amazon, Meta, and Flipkart.
         </p>
         <p>
-          We’ve built apps, automated systems, and agentic workflows that solve real, messy problems. neuronez is the lab where all that experience turns into something new.
+          People who've shipped complex systems long before AI became fashionable.
         </p>
+        <p>
+          They came together because building with AI demands experience, patience, and the instinct to solve real problems, not performative ones.
+        </p>
+        <p>
+          Deterministic in how they think, not probabilistic in how they work.
+        </p>
+        <div className="flex flex-wrap items-center gap-3 pt-2">
+          {brandBadges.map((brand) => (
+            <span
+              key={brand.name}
+              className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-white/20 bg-white/10 shadow-[0_0_18px_rgba(255,255,255,0.08)]"
+              title={brand.name}
+            >
+              <Image
+                src={brand.src}
+                alt={brand.name}
+                width={48}
+                height={48}
+                className="h-full w-full object-contain"
+                style={{ transform: brand.scale ? `scale(${brand.scale})` : undefined }}
+              />
+            </span>
+          ))}
+        </div>
         <div className="pt-4">
           <Link
             href="/team"
