@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Zap, Flame } from 'lucide-react';
+import { Flame } from 'lucide-react';
 
 export const Pricing: React.FC = () => {
   return (
