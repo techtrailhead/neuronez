@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Terminal, Database, Bot, Cpu, ChevronRight, Flame } from 'lucide-react';
+import { Terminal, Database, Bot, Cpu, Brain, ChevronRight, Flame } from 'lucide-react';
 import { WeekModule } from '../types';
 
 const curriculum: WeekModule[] = [
@@ -30,6 +30,13 @@ const curriculum: WeekModule[] = [
     description: "Total control. Customize models with LoRA/QLoRA to behave exactly how you need them to on your own data.",
     topics: ["Dataset Curation", "PEFT / LoRA", "Evaluation Frameworks", "Model Quantization"],
     project: "Domain-Expert Model"
+  },
+  {
+    week: 5,
+    title: "Memory Systems",
+    description: "Long-term recall. Engineer persistent memory layers that evolve with usage and keep agents aligned over time.",
+    topics: ["Memory Architectures", "Temporal Indexing", "Summarization Pipelines", "Context Compaction"],
+    project: "Adaptive Memory Core"
   }
 ];
 
@@ -37,14 +44,14 @@ export const Roadmap: React.FC = () => {
   const [activeWeek, setActiveWeek] = useState<number>(1);
 
   return (
-    <section id="curriculum" className="py-32 bg-bg-900 relative overflow-hidden">
+    <section id="forge" className="py-32 bg-bg-900 relative overflow-hidden">
       {/* Molten Vein Background Line */}
       <div className="absolute left-[50%] md:left-[30%] top-0 bottom-0 w-[2px] bg-stone-800 z-0 hidden md:block"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20 md:pl-[30%]">
            <h2 className="text-5xl md:text-7xl font-display uppercase text-white mb-4">The <span className="text-magma-500">Forge</span></h2>
-           <p className="text-stone-400 font-mono uppercase tracking-widest">4 Weeks. High Intensity. Pure Signal.</p>
+           <p className="text-stone-400 font-mono uppercase tracking-widest">6 Weeks. High Intensity. Pure Signal.</p>
         </div>
 
         <div className="relative grid md:grid-cols-[1fr_2fr] gap-16">
@@ -99,6 +106,7 @@ export const Roadmap: React.FC = () => {
                        {module.week === 2 && <Database size={32} />}
                        {module.week === 3 && <Bot size={32} />}
                        {module.week === 4 && <Cpu size={32} />}
+                       {module.week === 5 && <Brain size={32} />}
                      </div>
                      <div>
                         <div className="font-mono text-magma-500 text-xs uppercase tracking-widest mb-1">Objective</div>

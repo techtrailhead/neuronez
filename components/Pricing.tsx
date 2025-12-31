@@ -20,13 +20,15 @@ export const Pricing: React.FC = () => {
           {/* Standard Tier */}
           <div className="flex-1 bg-stone-900 border border-stone-800 p-10 flex flex-col hover:border-stone-600 transition-all duration-300 group">
             <div className="mb-10">
-              <h3 className="text-sm font-mono text-stone-500 uppercase tracking-widest mb-4 group-hover:text-white transition-colors">Observer Class</h3>
-              <div className="text-5xl font-display text-white">$299</div>
-              <p className="text-sm text-stone-500 mt-4 font-mono">Async Access / Self-Paced</p>
+              <h3 className="text-sm font-mono text-stone-500 uppercase tracking-widest mb-4 group-hover:text-white transition-colors">Student Access</h3>
+              <div className="text-5xl font-display text-white">Rs. 15K</div>
+              <p className="text-sm text-stone-500 mt-4 font-mono">
+                If you are a serious student who is looking to deep-dive in this journey, only then get access to the program.
+              </p>
             </div>
             
             <ul className="space-y-6 flex-1 mb-12">
-              {['Video Archives', 'Code Repositories', 'Community Read-Only', 'Lifetime Updates'].map((item, i) => (
+              {['Foundational'].map((item, i) => (
                 <li key={i} className="flex items-center gap-4 text-stone-400 text-sm font-medium">
                   <div className="w-1.5 h-1.5 bg-stone-600"></div>
                   {item}
@@ -52,12 +54,14 @@ export const Pricing: React.FC = () => {
                 <h3 className="text-sm font-mono text-magma-500 uppercase tracking-widest mb-4 flex items-center gap-2">
                    Architect Class <Flame size={14} className="fill-magma-500" />
                 </h3>
-                <div className="text-6xl font-display text-white mb-2">$499</div>
-                <p className="text-sm text-stone-500 font-mono"><span className="line-through decoration-magma-500/50">$799</span> <span className="text-magma-400 ml-2">EARLY BIRD ACTIVE</span></p>
+                <div className="text-6xl font-display text-white mb-2">Rs. 30K</div>
+                <p className="text-sm text-stone-500 font-mono">
+                  Working professionals, gather here. Get upgraded with all the skill sets.
+                </p>
               </div>
               
               <ul className="space-y-6 flex-1 mb-12">
-                {['Everything in Observer', '8 Live Sessions', 'Direct Feedback Loops', 'Production Certification', '1-on-1 Strategy Call'].map((item, i) => (
+                {['12 Live Sessions', 'Foundational + Advanced'].map((item, i) => (
                   <li key={i} className="flex items-center gap-4 text-white text-sm font-bold tracking-wide">
                     <div className="w-1.5 h-1.5 bg-magma-500 shadow-[0_0_10px_#f97316]"></div>
                     {item}

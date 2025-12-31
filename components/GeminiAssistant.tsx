@@ -1,12 +1,14 @@
+"use client";
+
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageSquare, X, Send, Terminal, Zap, Image as ImageIcon } from 'lucide-react';
-import { chatWithCounselor } from '../services/geminiService';
+import { chatWithCounselor } from '../services/assistantService';
 import { ChatMessage } from '../types';
 
 export const GeminiAssistant: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: "IGNIS_PROTOCOL_ONLINE. I am the Keeper. Inquire about the training parameters or ask me to visualize a concept." }
+    { role: 'model', text: "GENLOOPERS_PROTOCOL_ONLINE. I am the Keeper. Inquire about the training parameters or ask me to visualize a concept." }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -127,13 +129,16 @@ export const GeminiAssistant: React.FC = () => {
 
       {/* Toggle Button */}
       {!isOpen && (
-        <button 
-          onClick={() => setIsOpen(true)}
+        <a
+          href="https://wa.me/+918951520352?text=Hey!%20I%20am%20interested%20to%20know%20more%20about%20the%20program"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Chat on WhatsApp"
           className="group flex items-center justify-center w-16 h-16 bg-magma-600 text-white hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_30px_rgba(249,115,22,0.4)] clip-path-hexagon"
           style={{ clipPath: 'polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)' }}
         >
-          <Terminal size={24} />
-        </button>
+          <MessageSquare size={24} />
+        </a>
       )}
     </div>
   );

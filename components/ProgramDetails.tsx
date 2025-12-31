@@ -55,7 +55,7 @@ export const ProgramDetails: React.FC = () => {
               System <span className="text-stone-600">Specifications</span>
             </h2>
             <p className="text-stone-400 text-lg font-light leading-relaxed">
-              The Ignis Protocol is designed for maximum information density. 
+              The Neuronez AIXcelerators is designed for maximum information density. 
               We strip away the noise and focus purely on signal.
             </p>
           </div>

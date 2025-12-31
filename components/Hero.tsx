@@ -76,9 +76,12 @@ export const Hero: React.FC = () => {
             </div>
           </button>
           
-          <button className="px-10 py-5 text-stone-300 font-display uppercase tracking-widest text-lg border border-stone-700 hover:border-magma-500 hover:text-white skew-x-[-10deg] hover:bg-magma-500/5 transition-all">
+          <a
+            href="/manifesto"
+            className="px-10 py-5 text-stone-300 font-display uppercase tracking-widest text-lg border border-stone-700 hover:border-magma-500 hover:text-white skew-x-[-10deg] hover:bg-magma-500/5 transition-all"
+          >
              <div className="skew-x-[10deg]">View Manifesto</div>
-          </button>
+          </a>
         </div>
 
         {/* Tech Stack Strip */}
