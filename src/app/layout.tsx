@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
-import { Navbar } from "@/components/Navbar";
-import { NeuralField } from "@/components/NeuralField";
-import { ScrollProgress } from "@/components/ScrollProgress";
+import { LayoutShell } from "@/components/LayoutShell";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://neuronez.lab"),
@@ -46,12 +44,7 @@ export default function RootLayout({
             gtag('config', 'G-LY4WLTGNTV');
           `}
         </Script>
-        <NeuralField />
-        <div className="relative z-10 flex min-h-screen flex-col">
-          <ScrollProgress />
-          <Navbar />
-          <main className="flex-1">{children}</main>
-        </div>
+        <LayoutShell>{children}</LayoutShell>
       </body>
     </html>
   );
