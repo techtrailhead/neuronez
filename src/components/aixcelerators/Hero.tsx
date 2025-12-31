@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Flame, Zap } from 'lucide-react';
+import { ArrowRight, Flame } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const scrollToCurriculum = () => {
@@ -50,7 +50,7 @@ export const Hero: React.FC = () => {
 
         {/* Main Headline */}
         <h1 className="text-6xl md:text-8xl lg:text-9xl uppercase mb-8 tracking-wider font-display text-white leading-[0.9]">
-          <span className="block text-stone-600 opacity-50 text-4xl md:text-6xl mb-2 tracking-tight">Don't Just Use</span>
+          <span className="block text-stone-600 opacity-50 text-4xl md:text-6xl mb-2 tracking-tight">Don&apos;t Just Use</span>
           <span className="relative inline-block">
             <span className="absolute -inset-2 blur-2xl bg-magma-600/20 rounded-full"></span>
             <span className="relative text-transparent bg-clip-text bg-gradient-to-b from-white via-stone-200 to-stone-500 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">FORGE</span>

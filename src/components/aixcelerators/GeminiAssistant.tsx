@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageSquare, X, Send, Terminal, Zap, Image as ImageIcon } from 'lucide-react';
+import { MessageSquare, X, Send } from 'lucide-react';
 import { chatWithCounselor } from '@/services/assistantService';
 import { ChatMessage } from '@/types/aixcelerators';
 
