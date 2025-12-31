@@ -39,7 +39,7 @@ export default function ManifestoPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-transparent pointer-events-none h-32"></div>
 
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between relative z-10">
-          <a href="../" className="flex items-center gap-3 cursor-pointer group">
+          <a href="/aixcelerators" className="flex items-center gap-3 cursor-pointer group">
             <div className="relative">
               <Flame
                 className="text-white relative z-10 group-hover:text-magma-500 transition-colors duration-500"
@@ -60,10 +60,10 @@ export default function ManifestoPage() {
 
           <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-12">
             {[
-              { label: "Manifesto", href: "./" },
-              { label: "Technology", href: "../#technology" },
-              { label: "Curriculum", href: "../#forge" },
-              { label: "Pricing", href: "../#pricing" },
+              { label: "Manifesto", href: "/aixcelerators/manifesto" },
+              { label: "Technology", href: "/aixcelerators#technology" },
+              { label: "Curriculum", href: "/aixcelerators#forge" },
+              { label: "Pricing", href: "/aixcelerators#pricing" },
             ].map((item) => (
               <a
                 key={item.label}
@@ -77,7 +77,7 @@ export default function ManifestoPage() {
 
           <div className="hidden md:flex items-center gap-6">
             <a
-              href="../#pricing"
+              href="/aixcelerators#pricing"
               className="group relative px-8 py-3 border border-stone-600 hover:border-white text-white text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:bg-white hover:text-black overflow-hidden"
             >
               <span className="relative z-10">Initialize</span>

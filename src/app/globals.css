@@ -101,6 +101,10 @@ body.aixcelerators-body::after {
   background-image: none;
 }
 
+body.aixcelerators-body [data-neuronez-shell] {
+  display: none;
+}
+
 .aixcelerators-root {
   background-color: #000000;
   color: #e7e5e4;

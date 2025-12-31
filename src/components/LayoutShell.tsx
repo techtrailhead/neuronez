@@ -8,7 +8,9 @@ import { ScrollProgress } from "@/components/ScrollProgress";
 
 export function LayoutShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const isAixcelerators = pathname?.startsWith("/aixcelerators");
+  const resolvedPath =
+    pathname ?? (typeof window !== "undefined" ? window.location.pathname : "");
+  const isAixcelerators = resolvedPath.startsWith("/aixcelerators");
 
   useEffect(() => {
     if (!document?.body) return;
@@ -24,13 +26,13 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <>
+    <div data-neuronez-shell>
       <NeuralField />
       <div className="relative z-10 flex min-h-screen flex-col">
         <ScrollProgress />
         <Navbar />
         <main className="flex-1">{children}</main>
       </div>
-    </>
+    </div>
   );
 }
