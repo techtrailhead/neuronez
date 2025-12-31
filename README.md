@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# neuronez
 
-# Run and deploy your AI Studio app
+Story-driven site for the neuronez private AI lab. This repo also hosts the
+AIXcelerators landing experience at `/aixcelerators`.
 
-This contains everything you need to run your app locally.
+## Stack
+- Next.js 14 (App Router)
+- TypeScript + Tailwind CSS
+- IBM Plex Mono via `@fontsource`
+- Framer Motion for scroll-fade sections
 
-View your app in AI Studio: https://ai.studio/apps/drive/1MnEIyJRM8KhioRtDbLtlp6RG_WaqP1aH
+## Develop locally
+```bash
+npm install
+npm run dev
+```
+Visit `http://localhost:3000` for the main site and
+`http://localhost:3000/aixcelerators` for the AIXcelerators page.
 
-## Run Locally
+## Structure
+```
+src/
+├─ app/
+│  ├─ page.tsx                 # Neuronez narrative
+│  ├─ aixcelerators/…          # AIXcelerators landing + manifesto
+│  └─ globals.css              # Theme + typography
+├─ components/                 # Shared primitives + AIXcelerators components
+└─ lib/                         # Utility helpers + placeholder data
+```
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Notes
+- Neuronez uses IBM Plex Mono to match the reference aesthetic.
+- AIXcelerators brings its own typography and palette within the route.
