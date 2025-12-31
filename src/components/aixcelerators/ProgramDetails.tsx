@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radio, Cpu, Users, Database, ShieldCheck, Zap, Globe, Code, Lock } from 'lucide-react';
+import { Radio, Cpu, Users, Database, ShieldCheck, Zap } from 'lucide-react';
 
 const features = [
   {

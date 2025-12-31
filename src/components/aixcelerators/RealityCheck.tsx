@@ -21,14 +21,14 @@ export const RealityCheck: React.FC = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-magma-500 to-ember-600">Extinction</span>
             </h2>
             <p className="text-stone-400 mb-8 text-xl leading-relaxed font-light">
-              The "AI User" is a commodity. The "AI Architect" is a scarce asset. 
+              The &quot;AI User&quot; is a commodity. The &quot;AI Architect&quot; is a scarce asset.
               The gap between consuming intelligence and engineering it is widening exponentially.
             </p>
             
             <div className="p-8 bg-bg-900 border border-stone-800 relative mb-10 overflow-hidden group hover:border-magma-600/50 transition-colors">
               <div className="absolute top-0 left-0 w-1 h-full bg-magma-500"></div>
               <p className="text-stone-300 text-lg font-sans italic relative z-10">
-                "It is not AI that will replace you. It is the engineer who builds the AI that replaces your entire department."
+                &quot;It is not AI that will replace you. It is the engineer who builds the AI that replaces your entire department.&quot;
               </p>
               <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-magma-500/10 rounded-full blur-2xl group-hover:bg-magma-500/20 transition-colors"></div>
             </div>
