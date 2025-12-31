@@ -16,7 +16,7 @@ export default function Page() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-transparent pointer-events-none h-32"></div>
 
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between relative z-10">
-          <div className="flex items-center gap-3 cursor-pointer group">
+          <a href="/aixcelerators" className="flex items-center gap-3 cursor-pointer group">
             <div className="relative">
               <Flame
                 className="text-white relative z-10 group-hover:text-magma-500 transition-colors duration-500"
@@ -33,11 +33,11 @@ export default function Page() {
                 AIXcelerators
               </span>
             </div>
-          </div>
+          </a>
 
           <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-12">
             {[
-              { label: "Manifesto", href: "manifesto" },
+              { label: "Manifesto", href: "/aixcelerators/manifesto" },
               { label: "Technology", href: "#technology" },
               { label: "Curriculum", href: "#forge" },
               { label: "Pricing", href: "#pricing" },
