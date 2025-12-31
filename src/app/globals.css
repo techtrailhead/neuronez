@@ -91,6 +91,7 @@ body::after {
 body.aixcelerators-body {
   background-color: #000000;
   color: #e7e5e4;
+  font-family: var(--font-rajdhani), Rajdhani, sans-serif;
 }
 
 body.aixcelerators-body::before,
@@ -103,6 +104,18 @@ body.aixcelerators-body::after {
   background-color: #000000;
   color: #e7e5e4;
   overflow-x: hidden;
+}
+
+.aixcelerators-root .font-display {
+  font-family: var(--font-russo), "Russo One", sans-serif;
+}
+
+.aixcelerators-root .font-mono {
+  font-family: var(--font-jetbrains), "JetBrains Mono", monospace;
+}
+
+.aixcelerators-root .font-sans {
+  font-family: var(--font-rajdhani), Rajdhani, sans-serif;
 }
 
 .glass-card {
